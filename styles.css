@@ -1,3 +1,4 @@
+/* 元のファイルのスタイル */
 body {
     font-family: Arial, sans-serif;
     background-color: #FEEFEA; /* 背景色 */
@@ -52,4 +53,19 @@ label {
 input[type="range"] {
     margin: 10px 0;
     background-color: #E4CEB9; /* スライダーの背景色 */
+}
+
+/* ジャンル分けボタンのスタイル */
+.genreButton {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #974247; /* ボーダー色 */
+    border-radius: 0px; /* 角ばらせる */
+    background-color: #974247; /* ボタンの背景色 */
+    color: #ffffff; /* ボタンのテキストカラー */
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    white-space: nowrap; /* 文字を改行させない */
+    width: auto;
+    box-sizing: border-box;
 }
