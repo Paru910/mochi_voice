@@ -339,7 +339,6 @@ function createAudioButtons(audioFiles) {
   }
 }
 
-
 // 音声を再生する関数
 function playSound(soundId, button) {
   var sound = document.getElementById(soundId);
@@ -368,23 +367,41 @@ function createGenreButtons(genreData) {
       var genreButton = document.createElement('button');
       genreButton.textContent = genre;
       genreButton.className = 'genreButton';
-      genreButton.onclick = (function(genre) {
+      genreButton.onclick = (function(genre, genreButton) {
         return function() {
+          // すべてのジャンルボタンから 'selected' クラスを削除
+          var genreButtons = document.querySelectorAll('.genreButton');
+          genreButtons.forEach(function(button) {
+            button.classList.remove('selected');
+          });
+
+          // クリックされたジャンルボタンに 'selected' クラスを追加
+          genreButton.classList.add('selected');
+
           displayGenreButtons(genre);
         };
-      })(genre);
+      })(genre, genreButton);
 
       container.appendChild(genreButton);
     }
   }
-}
 
+  // デフォルトで選択されている "通常ボイス" のジャンルボタンに 'selected' クラスを追加
+  document.querySelector('.genreButton').classList.add('selected');
+}
 
 // ジャンルごとのボタンを表示する関数
 function displayGenreButtons(genre) {
   var genreList = genreData[genre];
-  createAudioButtons(genreList);
+  if (genreList) { // ジャンルが存在することを確認
+    createAudioButtons(genreList);
+  } else {
+    console.error('ジャンル ' + genre + ' は存在しません。');
+  }
 }
 
 // ジャンルボタンを生成
 createGenreButtons(genreData);
+
+// デフォルトで "通常ボイス" のボイスボタンを表示
+displayGenreButtons("通常ボイス");
