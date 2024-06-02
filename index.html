@@ -6,906 +6,349 @@
 </head>
 <body>
 	<h2 class="d-inline-block fw-bold">鏡矢おもちボイスボタン</h2>
+	
+	    <label for="volume">音量調整:</label>
+    <input type="range" id="volume" name="volume" min="0" max="1" step="0.01" value="1">
 
-    <button onclick="playSound('爆発注意')">爆発注意</button>
-    <audio id="爆発注意" src="voice/爆発注意.mp3"></audio>
+    <div id="buttonContainer"></div>
     
-    <button onclick="playSound('平気なふりをしても無駄よ')">平気なふりをしても無駄よ</button>
-    <audio id="平気なふりをしても無駄よ" src="voice/平気なふりをしても無駄よ.mp3"></audio>
-    
-    <button onclick="playSound('放火に耐えられるか')">放火に耐えられるか</button>
-    <audio id="放火に耐えられるか" src="voice/放火に耐えられるか.mp3"></audio>
-    
-    <button onclick="playSound('木っ端微塵')">木っ端微塵</button>
-    <audio id="木っ端微塵" src="voice/木っ端微塵.mp3"></audio>
-    
-    <button onclick="playSound('目を奪うわ')">目を奪うわ</button>
-    <audio id="目を奪うわ" src="voice/目を奪うわ.mp3"></audio>
-    
-    <button onclick="playSound('目を奪うわ-2')">目を奪うわ-2</button>
-    <audio id="目を奪うわ-2" src="voice/目を奪うわ-2.mp3"></audio>
-    
-    <button onclick="playSound('目を奪うわ-3')">目を奪うわ-3</button>
-    <audio id="目を奪うわ-3" src="voice/目を奪うわ-3.mp3"></audio>
-    
-    <button onclick="playSound('踊らせてやるよ')">踊らせてやるよ</button>
-    <audio id="踊らせてやるよ" src="voice/踊らせてやるよ.mp3"></audio>
-    
-    <button onclick="playSound('裏裏裏')">裏裏裏</button>
-    <audio id="裏裏裏" src="voice/裏裏裏.mp3"></audio>
-    
-    <button onclick="playSound('Aにスパイクよ')">Aにスパイクよ</button>
-    <audio id="Aにスパイクよ" src="voice/Aにスパイクよ.mp3"></audio>
-    
-    <button onclick="playSound('Aに敵がいる')">Aに敵がいる</button>
-    <audio id="Aに敵がいる" src="voice/Aに敵がいる.mp3"></audio>
-    
-    <button onclick="playSound('Aに敵がいる-2')">Aに敵がいる-2</button>
-    <audio id="Aに敵がいる-2" src="voice/Aに敵がいる-2.mp3"></audio>
-    
-    <button onclick="playSound('Aに敵がいる-3')">Aに敵がいる-3</button>
-    <audio id="Aに敵がいる-3" src="voice/Aに敵がいる-3.mp3"></audio>
-    
-    <button onclick="playSound('Aに敵よ')">Aに敵よ</button>
-    <audio id="Aに敵よ" src="voice/Aに敵よ.mp3"></audio>
-    
-    <button onclick="playSound('Aに敵確認')">Aに敵確認</button>
-    <audio id="Aに敵確認" src="voice/Aに敵確認.mp3"></audio>
-    
-    <button onclick="playSound('Aに敵確認-2')">Aに敵確認-2</button>
-    <audio id="Aに敵確認-2" src="voice/Aに敵確認-2.mp3"></audio>
-    
-    <button onclick="playSound('Bでキャリアーダウン')">Bでキャリアーダウン</button>
-    <audio id="Bでキャリアーダウン" src="voice/Bでキャリアーダウン.mp3"></audio>
-    
-    <button onclick="playSound('Bでキャリアダウン')">Bでキャリアダウン</button>
-    <audio id="Bでキャリアダウン" src="voice/Bでキャリアダウン.mp3"></audio>
-    
-    <button onclick="playSound('Bに敵')">Bに敵</button>
-    <audio id="Bに敵" src="voice/Bに敵.mp3"></audio>
-    
-    <button onclick="playSound('Bに敵確認')">Bに敵確認</button>
-    <audio id="Bに敵確認" src="voice/Bに敵確認.mp3"></audio>
-    
-    <button onclick="playSound('Bに敵確認-2')">Bに敵確認-2</button>
-    <audio id="Bに敵確認-2" src="voice/Bに敵確認-2.mp3"></audio>
-    
-    <button onclick="playSound('Bに敵確認-3')">Bに敵確認-3</button>
-    <audio id="Bに敵確認-3" src="voice/Bに敵確認-3.mp3"></audio>
-    
-    <button onclick="playSound('Cに敵がいる')">Cに敵がいる</button>
-    <audio id="Cに敵がいる" src="voice/Cに敵がいる.mp3"></audio>
-    
-    <button onclick="playSound('あ、ミッドミッド')">あ、ミッドミッド</button>
-    <audio id="あ、ミッドミッド" src="voice/あ、ミッドミッド.mp3"></audio>
-    
-    <button onclick="playSound('あぁ～')">あぁ～</button>
-    <audio id="あぁ～" src="voice/あぁ～.mp3"></audio>
-    
-    <button onclick="playSound('あぁ～～～ソーリー')">あぁ～～～ソーリー</button>
-    <audio id="あぁ～～～ソーリー" src="voice/あぁ～～～ソーリー.mp3"></audio>
-    
-    <button onclick="playSound('あぁ～っ')">あぁ～っ</button>
-    <audio id="あぁ～っ" src="voice/あぁ～っ.mp3"></audio>
-    
-    <button onclick="playSound('あぁぁっ')">あぁぁっ</button>
-    <audio id="あぁぁっ" src="voice/あぁぁっ.mp3"></audio>
-    
-    <button onclick="playSound('あぁっ！')">あぁっ！</button>
-    <audio id="あぁっ！" src="voice/あぁっ！.mp3"></audio>
-    
-    <button onclick="playSound('ああっ…')">ああっ…</button>
-    <audio id="ああっ…" src="voice/ああっ….mp3"></audio>
-    
-    <button onclick="playSound('あざます')">あざます</button>
-    <audio id="あざます" src="voice/あざます.mp3"></audio>
-    
-    <button onclick="playSound('あっああっ')">あっああっ</button>
-    <audio id="あっああっ" src="voice/あっああっ.mp3"></audio>
-    
-    <button onclick="playSound('あはははは～')">あはははは～</button>
-    <audio id="あはははは～" src="voice/あはははは～.mp3"></audio>
-    
-    <button onclick="playSound('アラームボットダウン')">アラームボットダウン</button>
-    <audio id="アラームボットダウン" src="voice/アラームボットダウン.mp3"></audio>
-    
-    <button onclick="playSound('アラームボット展開')">アラームボット展開</button>
-    <audio id="アラームボット展開" src="voice/アラームボット展開.mp3"></audio>
-    
-    <button onclick="playSound('アラームボット廃止')">アラームボット廃止</button>
-    <audio id="アラームボット廃止" src="voice/アラームボット廃止.mp3"></audio>
-    
-    <button onclick="playSound('ありがと')">ありがと</button>
-    <audio id="ありがと" src="voice/ありがと.mp3"></audio>
-    
-    <button onclick="playSound('ありがと-2')">ありがと-2</button>
-    <audio id="ありがと-2" src="voice/ありがと-2.mp3"></audio>
-    
-    <button onclick="playSound('ありがとありがと')">ありがとありがと</button>
-    <audio id="ありがとありがと" src="voice/ありがとありがと.mp3"></audio>
-    
-    <button onclick="playSound('ありがとうございます')">ありがとうございます</button>
-    <audio id="ありがとうございます" src="voice/ありがとうございます.mp3"></audio>
-    
-    <button onclick="playSound('ありがとうございます-2')">ありがとうございます-2</button>
-    <audio id="ありがとうございます-2" src="voice/ありがとうございます-2.mp3"></audio>
-    
-    <button onclick="playSound('ありがとうございます-3')">ありがとうございます-3</button>
-    <audio id="ありがとうございます-3" src="voice/ありがとうございます-3.mp3"></audio>
-    
-    <button onclick="playSound('アルティメット準備完了')">アルティメット準備完了</button>
-    <audio id="アルティメット準備完了" src="voice/アルティメット準備完了.mp3"></audio>
-    
-    <button onclick="playSound('アルティメット準備完了-2')">アルティメット準備完了-2</button>
-    <audio id="アルティメット準備完了-2" src="voice/アルティメット準備完了-2.mp3"></audio>
-    
-    <button onclick="playSound('アルティメット準備完了あぁ～')">アルティメット準備完了あぁ～</button>
-    <audio id="アルティメット準備完了あぁ～" src="voice/アルティメット準備完了あぁ～.mp3"></audio>
-    
-    <button onclick="playSound('いくぞ、準備は整った')">いくぞ、準備は整った</button>
-    <audio id="いくぞ、準備は整った" src="voice/いくぞ、準備は整った.mp3"></audio>
-    
-    <button onclick="playSound('いけいけいけいけいけいけ')">いけいけいけいけいけいけ</button>
-    <audio id="いけいけいけいけいけいけ" src="voice/いけいけいけいけいけいけ.mp3"></audio>
-    
-    <button onclick="playSound('いけっ')">いけっ</button>
-    <audio id="いけっ" src="voice/いけっ.mp3"></audio>
-    
-    <button onclick="playSound('いつだって僕はいつだって真剣なんだ')">いつだって僕はいつだって真剣なんだ</button>
-    <audio id="いつだって僕はいつだって真剣なんだ" src="voice/いつだって僕はいつだって真剣なんだ.mp3"></audio>
-    
-    <button onclick="playSound('ゔぃゔぃゔぃゔぃゔぃゔぃゔぃゔぃ')">ゔぃゔぃゔぃゔぃゔぃゔぃゔぃゔぃ</button>
-    <audio id="ゔぃゔぃゔぃゔぃゔぃゔぃゔぃゔぃ" src="voice/ゔぃゔぃゔぃゔぃゔぃゔぃゔぃゔぃ.mp3"></audio>
-    
-    <button onclick="playSound('ゔぃゔぃゔぃゔぃゔぃゔぃゔぃゔぃ-2')">ゔぃゔぃゔぃゔぃゔぃゔぃゔぃゔぃ-2</button>
-    <audio id="ゔぃゔぃゔぃゔぃゔぃゔぃゔぃゔぃ-2" src="voice/ゔぃゔぃゔぃゔぃゔぃゔぃゔぃゔぃ-2.mp3"></audio>
-    
-    <button onclick="playSound('ウルトケア')">ウルトケア</button>
-    <audio id="ウルトケア" src="voice/ウルトケア.mp3"></audio>
-    
-    <button onclick="playSound('うわっ、待って待って待って待って待って')">うわっ、待って待って待って待って待って</button>
-    <audio id="うわっ、待って待って待って待って待って" src="voice/うわっ、待って待って待って待って待って.mp3"></audio>
-    
-    <button onclick="playSound('エントリーするぅ')">エントリーするぅ</button>
-    <audio id="エントリーするぅ" src="voice/エントリーするぅ.mp3"></audio>
-    
-    <button onclick="playSound('お願いします')">お願いします</button>
-    <audio id="お願いします" src="voice/お願いします.mp3"></audio>
-    
-    <button onclick="playSound('お金ならあるよ')">お金ならあるよ</button>
-    <audio id="お金ならあるよ" src="voice/お金ならあるよ.mp3"></audio>
-    
-    <button onclick="playSound('かぁっ!')">かぁっ!</button>
-    <audio id="かぁっ!" src="voice/かぁっ!.mp3"></audio>
-    
-    <button onclick="playSound('カウントダウン開始')">カウントダウン開始</button>
-    <audio id="カウントダウン開始" src="voice/カウントダウン開始.mp3"></audio>
-    
-    <button onclick="playSound('カウントダウン開始-2')">カウントダウン開始-2</button>
-    <audio id="カウントダウン開始-2" src="voice/カウントダウン開始-2.mp3"></audio>
-    
-    <button onclick="playSound('カチャ')">カチャ</button>
-    <audio id="カチャ" src="voice/カチャ.mp3"></audio>
-    
-    <button onclick="playSound('ガチャガチャガチャバーン')">ガチャガチャガチャバーン</button>
-    <audio id="ガチャガチャガチャバーン" src="voice/ガチャガチャガチャバーン.mp3"></audio>
-    
-    <button onclick="playSound('カチャカチャカチャバシャーン')">カチャカチャカチャバシャーン</button>
-    <audio id="カチャカチャカチャバシャーン" src="voice/カチャカチャカチャバシャーン.mp3"></audio>
-    
-    <button onclick="playSound('カチャカチャカチャ恐れるがいい')">カチャカチャカチャ恐れるがいい</button>
-    <audio id="カチャカチャカチャ恐れるがいい" src="voice/カチャカチャカチャ恐れるがいい.mp3"></audio>
-    
-    <button onclick="playSound('カチャン')">カチャン</button>
-    <audio id="カチャン" src="voice/カチャン.mp3"></audio>
-    
-    <button onclick="playSound('がっかりね')">がっかりね</button>
-    <audio id="がっかりね" src="voice/がっかりね.mp3"></audio>
-    
-    <button onclick="playSound('ガレージ')">ガレージ</button>
-    <audio id="ガレージ" src="voice/ガレージ.mp3"></audio>
-    
-    <button onclick="playSound('キャリアダウン')">キャリアダウン</button>
-    <audio id="キャリアダウン" src="voice/キャリアダウン.mp3"></audio>
-    
-    <button onclick="playSound('きゅーんひゅんひゅんひゅんひゅーん')">きゅーんひゅんひゅんひゅんひゅーん</button>
-    <audio id="きゅーんひゅんひゅんひゅんひゅーん" src="voice/きゅーんひゅんひゅんひゅんひゅーん.mp3"></audio>
-    
-    <button onclick="playSound('くぁ～～～～')">くぁ～～～～</button>
-    <audio id="くぁ～～～～" src="voice/くぁ～～～～.mp3"></audio>
-    
-    <button onclick="playSound('くぅぁ～')">くぅぁ～</button>
-    <audio id="くぅぁ～" src="voice/くぅぁ～.mp3"></audio>
-    
-    <button onclick="playSound('くそぉ')">くそぉ</button>
-    <audio id="くそぉ" src="voice/くそぉ.mp3"></audio>
-    
-    <button onclick="playSound('ぐゆんぐゆんぐゆんぐゆん')">ぐゆんぐゆんぐゆんぐゆん</button>
-    <audio id="ぐゆんぐゆんぐゆんぐゆん" src="voice/ぐゆんぐゆんぐゆんぐゆん.mp3"></audio>
-    
-    <button onclick="playSound('くらえ')">くらえ</button>
-    <audio id="くらえ" src="voice/くらえ.mp3"></audio>
-    
-    <button onclick="playSound('くらえ～')">くらえ～</button>
-    <audio id="くらえ～" src="voice/くらえ～.mp3"></audio>
-    
-    <button onclick="playSound('くらえ-2')">くらえ-2</button>
-    <audio id="くらえ-2" src="voice/くらえ-2.mp3"></audio>
-    
-    <button onclick="playSound('ぐりゅんぐりゅんぐりゅんぐりゅんぐりゅんぐりゅん')">ぐりゅんぐりゅんぐりゅんぐりゅんぐりゅんぐりゅん</button>
-    <audio id="ぐりゅんぐりゅんぐりゅんぐりゅんぐりゅんぐりゅん" src="voice/ぐりゅんぐりゅんぐりゅんぐりゅんぐりゅんぐりゅん.mp3"></audio>
-    
-    <button onclick="playSound('グルグルグルぼーん')">グルグルグルぼーん</button>
-    <audio id="グルグルグルぼーん" src="voice/グルグルグルぼーん.mp3"></audio>
-    
-    <button onclick="playSound('グレネード')">グレネード</button>
-    <audio id="グレネード" src="voice/グレネード.mp3"></audio>
-    
-    <button onclick="playSound('グレネード展開')">グレネード展開</button>
-    <audio id="グレネード展開" src="voice/グレネード展開.mp3"></audio>
-    
-    <button onclick="playSound('グレネード展開-2')">グレネード展開-2</button>
-    <audio id="グレネード展開-2" src="voice/グレネード展開-2.mp3"></audio>
-    
-    <button onclick="playSound('グレネード配置')">グレネード配置</button>
-    <audio id="グレネード配置" src="voice/グレネード配置.mp3"></audio>
-    
-    <button onclick="playSound('グレネード配置-2')">グレネード配置-2</button>
-    <audio id="グレネード配置-2" src="voice/グレネード配置-2.mp3"></audio>
-    
-    <button onclick="playSound('ぐわぁキャリアーダウン')">ぐわぁキャリアーダウン</button>
-    <audio id="ぐわぁキャリアーダウン" src="voice/ぐわぁキャリアーダウン.mp3"></audio>
-    
-    <button onclick="playSound('こいつは後から膝にくる')">こいつは後から膝にくる</button>
-    <audio id="こいつは後から膝にくる" src="voice/こいつは後から膝にくる.mp3"></audio>
-    
-    <button onclick="playSound('ここだぁ')">ここだぁ</button>
-    <audio id="ここだぁ" src="voice/ここだぁ.mp3"></audio>
-    
-    <button onclick="playSound('ここにしよう')">ここにしよう</button>
-    <audio id="ここにしよう" src="voice/ここにしよう.mp3"></audio>
-    
-    <button onclick="playSound('ここよ')">ここよ</button>
-    <audio id="ここよ" src="voice/ここよ.mp3"></audio>
-    
-    <button onclick="playSound('ごめんすぎ')">ごめんすぎ</button>
-    <audio id="ごめんすぎ" src="voice/ごめんすぎ.mp3"></audio>
-    
-    <button onclick="playSound('これがチームの力だね')">これがチームの力だね</button>
-    <audio id="これがチームの力だね" src="voice/これがチームの力だね.mp3"></audio>
-    
-    <button onclick="playSound('これくれなーい？')">これくれなーい？</button>
-    <audio id="これくれなーい？" src="voice/これくれなーい？.mp3"></audio>
-    
-    <button onclick="playSound('これで全部だね')">これで全部だね</button>
-    <audio id="これで全部だね" src="voice/これで全部だね.mp3"></audio>
-    
-    <button onclick="playSound('これ買ってくれなーい？')">これ買ってくれなーい？</button>
-    <audio id="これ買ってくれなーい？" src="voice/これ買ってくれなーい？.mp3"></audio>
-    
-    <button onclick="playSound('こんこんこんこんこんこんこんこん')">こんこんこんこんこんこんこんこん</button>
-    <audio id="こんこんこんこんこんこんこんこん" src="voice/こんこんこんこんこんこんこんこん.mp3"></audio>
-    
-    <button onclick="playSound('さぁ!未知の世界へ')">さぁ!未知の世界へ</button>
-    <audio id="さぁ!未知の世界へ" src="voice/さぁ!未知の世界へ.mp3"></audio>
-    
-    <button onclick="playSound('サクサクサクサクサクサクサク')">サクサクサクサクサクサクサク</button>
-    <audio id="サクサクサクサクサクサクサク" src="voice/サクサクサクサクサクサクサク.mp3"></audio>
-    
-    <button onclick="playSound('サクサクサクサクシャンシャンシャンシャン')">サクサクサクサクシャンシャンシャンシャン</button>
-    <audio id="サクサクサクサクシャンシャンシャンシャン" src="voice/サクサクサクサクシャンシャンシャンシャン.mp3"></audio>
-    
-    <button onclick="playSound('さらばだ')">さらばだ</button>
-    <audio id="さらばだ" src="voice/さらばだ.mp3"></audio>
-    
-    <button onclick="playSound('サンキュー')">サンキュー</button>
-    <audio id="サンキュー" src="voice/サンキュー.mp3"></audio>
-    
-    <button onclick="playSound('サンキュー-2')">サンキュー-2</button>
-    <audio id="サンキュー-2" src="voice/サンキュー-2.mp3"></audio>
-    
-    <button onclick="playSound('サンキュー-3')">サンキュー-3</button>
-    <audio id="サンキュー-3" src="voice/サンキュー-3.mp3"></audio>
-    
-    <button onclick="playSound('サンキュー-4')">サンキュー-4</button>
-    <audio id="サンキュー-4" src="voice/サンキュー-4.mp3"></audio>
-    
-    <button onclick="playSound('サンキュー-5')">サンキュー-5</button>
-    <audio id="サンキュー-5" src="voice/サンキュー-5.mp3"></audio>
-    
-    <button onclick="playSound('サンキュー-6')">サンキュー-6</button>
-    <audio id="サンキュー-6" src="voice/サンキュー-6.mp3"></audio>
-    
-    <button onclick="playSound('サンキュー-7')">サンキュー-7</button>
-    <audio id="サンキュー-7" src="voice/サンキュー-7.mp3"></audio>
-    
-    <button onclick="playSound('サンキュー-8')">サンキュー-8</button>
-    <audio id="サンキュー-8" src="voice/サンキュー-8.mp3"></audio>
-    
-    <button onclick="playSound('シェリフもらっていいですか？')">シェリフもらっていいですか？</button>
-    <audio id="シェリフもらっていいですか？" src="voice/シェリフもらっていいですか？.mp3"></audio>
-    
-    <button onclick="playSound('シャキン')">シャキン</button>
-    <audio id="シャキン" src="voice/シャキン.mp3"></audio>
-    
-    <button onclick="playSound('シュイーン')">シュイーン</button>
-    <audio id="シュイーン" src="voice/シュイーン.mp3"></audio>
-    
-    <button onclick="playSound('しゅん')">しゅん</button>
-    <audio id="しゅん" src="voice/しゅん.mp3"></audio>
-    
-    <button onclick="playSound('スティムビーコン')">スティムビーコン</button>
-    <audio id="スティムビーコン" src="voice/スティムビーコン.mp3"></audio>
-    
-    <button onclick="playSound('スティムビーコンじゃ')">スティムビーコンじゃ</button>
-    <audio id="スティムビーコンじゃ" src="voice/スティムビーコンじゃ.mp3"></audio>
-    
-    <button onclick="playSound('スティムビーコンじゃ-2')">スティムビーコンじゃ-2</button>
-    <audio id="スティムビーコンじゃ-2" src="voice/スティムビーコンじゃ-2.mp3"></audio>
-    
-    <button onclick="playSound('スパイクカウントダウン早め')">スパイクカウントダウン早め</button>
-    <audio id="スパイクカウントダウン早め" src="voice/スパイクカウントダウン早め.mp3"></audio>
-    
-    <button onclick="playSound('スパイクカウントダウン遅め')">スパイクカウントダウン遅め</button>
-    <audio id="スパイクカウントダウン遅め" src="voice/スパイクカウントダウン遅め.mp3"></audio>
-    
-    <button onclick="playSound('スパイクを設置')">スパイクを設置</button>
-    <audio id="スパイクを設置" src="voice/スパイクを設置.mp3"></audio>
-    
-    <button onclick="playSound('スパイク設置')">スパイク設置</button>
-    <audio id="スパイク設置" src="voice/スパイク設置.mp3"></audio>
-    
-    <button onclick="playSound('せーの')">せーの</button>
-    <audio id="せーの" src="voice/せーの.mp3"></audio>
-    
-    <button onclick="playSound('セントリー設置')">セントリー設置</button>
-    <audio id="セントリー設置" src="voice/セントリー設置.mp3"></audio>
-    
-    <button onclick="playSound('ソーリー、ありがとうございました')">ソーリー、ありがとうございました</button>
-    <audio id="ソーリー、ありがとうございました" src="voice/ソーリー、ありがとうございました.mp3"></audio>
-    
-    <button onclick="playSound('ソーリー')">ソーリー</button>
-    <audio id="ソーリー" src="voice/ソーリー.mp3"></audio>
-    
-    <button onclick="playSound('ソーリメンすぎる')">ソーリメンすぎる</button>
-    <audio id="ソーリメンすぎる" src="voice/ソーリメンすぎる.mp3"></audio>
-    
-    <button onclick="playSound('たぁーっクラッチ')">たぁーっクラッチ</button>
-    <audio id="たぁーっクラッチ" src="voice/たぁーっクラッチ.mp3"></audio>
-    
-    <button onclick="playSound('タレットがやられた')">タレットがやられた</button>
-    <audio id="タレットがやられた" src="voice/タレットがやられた.mp3"></audio>
-    
-    <button onclick="playSound('タレット展開')">タレット展開</button>
-    <audio id="タレット展開" src="voice/タレット展開.mp3"></audio>
-    
-    <button onclick="playSound('タレット展開-2')">タレット展開-2</button>
-    <audio id="タレット展開-2" src="voice/タレット展開-2.mp3"></audio>
-    
-    <button onclick="playSound('チャンピオンフィニッシャー')">チャンピオンフィニッシャー</button>
-    <audio id="チャンピオンフィニッシャー" src="voice/チャンピオンフィニッシャー.mp3"></audio>
-    
-    <button onclick="playSound('チャンピオンフィニッシャー-2')">チャンピオンフィニッシャー-2</button>
-    <audio id="チャンピオンフィニッシャー-2" src="voice/チャンピオンフィニッシャー-2.mp3"></audio>
-    
-    <button onclick="playSound('テレポート可能だ')">テレポート可能だ</button>
-    <audio id="テレポート可能だ" src="voice/テレポート可能だ.mp3"></audio>
-    
-    <button onclick="playSound('どうしよっかな～')">どうしよっかな～</button>
-    <audio id="どうしよっかな～" src="voice/どうしよっかな～.mp3"></audio>
-    
-    <button onclick="playSound('どうもね！')">どうもね！</button>
-    <audio id="どうもね！" src="voice/どうもね！.mp3"></audio>
-    
-    <button onclick="playSound('どうもね')">どうもね</button>
-    <audio id="どうもね" src="voice/どうもね.mp3"></audio>
-    
-    <button onclick="playSound('どぅわぁ！')">どぅわぁ！</button>
-    <audio id="どぅわぁ！" src="voice/どぅわぁ！.mp3"></audio>
-    
-    <button onclick="playSound('どぅわぁ～')">どぅわぁ～</button>
-    <audio id="どぅわぁ～" src="voice/どぅわぁ～.mp3"></audio>
-    
-    <button onclick="playSound('トコトコトコトコトコ')">トコトコトコトコトコ</button>
-    <audio id="トコトコトコトコトコ" src="voice/トコトコトコトコトコ.mp3"></audio>
-    
-    <button onclick="playSound('どこへ向かうの？')">どこへ向かうの？</button>
-    <audio id="どこへ向かうの？" src="voice/どこへ向かうの？.mp3"></audio>
-    
-    <button onclick="playSound('ドッカーン')">ドッカーン</button>
-    <audio id="ドッカーン" src="voice/ドッカーン.mp3"></audio>
-    
-    <button onclick="playSound('ドドドドドドドン')">ドドドドドドドン</button>
-    <audio id="ドドドドドドドン" src="voice/ドドドドドドドン.mp3"></audio>
-    
-    <button onclick="playSound('ドドドドボボボボボ')">ドドドドボボボボボ</button>
-    <audio id="ドドドドボボボボボ" src="voice/ドドドドボボボボボ.mp3"></audio>
-    
-    <button onclick="playSound('とんとんとんととんととんとんとんとんとんとんとんととん')">とんとんとんととんととんとんとんとんとんとんとんととん</button>
-    <audio id="とんとんとんととんととんとんとんとんとんとんとんととん" src="voice/とんとんとんととんととんとんとんとんとんとんとんととん.mp3"></audio>
-    
-    <button onclick="playSound('とんとんとんとんとんとんとん')">とんとんとんとんとんとんとん</button>
-    <audio id="とんとんとんとんとんとんとん" src="voice/とんとんとんとんとんとんとん.mp3"></audio>
-    
-    <button onclick="playSound('トントントントントントントントン')">トントントントントントントントン</button>
-    <audio id="トントントントントントントントン" src="voice/トントントントントントントントン.mp3"></audio>
-    
-    <button onclick="playSound('ドンボンボンボンボンボン')">ドンボンボンボンボンボン</button>
-    <audio id="ドンボンボンボンボンボン" src="voice/ドンボンボンボンボンボン.mp3"></audio>
-    
-    <button onclick="playSound('ナイス')">ナイス</button>
-    <audio id="ナイス" src="voice/ナイス.mp3"></audio>
-    
-    <button onclick="playSound('ナイス-2')">ナイス-2</button>
-    <audio id="ナイス-2" src="voice/ナイス-2.mp3"></audio>
-    
-    <button onclick="playSound('ナイス-3')">ナイス-3</button>
-    <audio id="ナイス-3" src="voice/ナイス-3.mp3"></audio>
-    
-    <button onclick="playSound('ナイスだ～')">ナイスだ～</button>
-    <audio id="ナイスだ～" src="voice/ナイスだ～.mp3"></audio>
-    
-    <button onclick="playSound('ナイストライ')">ナイストライ</button>
-    <audio id="ナイストライ" src="voice/ナイストライ.mp3"></audio>
-    
-    <button onclick="playSound('ナイスナイス')">ナイスナイス</button>
-    <audio id="ナイスナイス" src="voice/ナイスナイス.mp3"></audio>
-    
-    <button onclick="playSound('ナイスナイス-2')">ナイスナイス-2</button>
-    <audio id="ナイスナイス-2" src="voice/ナイスナイス-2.mp3"></audio>
-    
-    <button onclick="playSound('なにか必要か？')">なにか必要か？</button>
-    <audio id="なにか必要か？" src="voice/なにか必要か？.mp3"></audio>
-    
-    <button onclick="playSound('なにか必要か？-2')">なにか必要か？-2</button>
-    <audio id="なにか必要か？-2" src="voice/なにか必要か？-2.mp3"></audio>
-    
-    <button onclick="playSound('なんだろう、私達と似てる、でも、何かが違う')">なんだろう、私達と似てる、でも、何かが違う</button>
-    <audio id="なんだろう、私達と似てる、でも、何かが違う" src="voice/なんだろう、私達と似てる、でも、何かが違う.mp3"></audio>
-    
-    <button onclick="playSound('なんやねん')">なんやねん</button>
-    <audio id="なんやねん" src="voice/なんやねん.mp3"></audio>
-    
-    <button onclick="playSound('ばぁぁぁぁぁぁぁ')">ばぁぁぁぁぁぁぁ</button>
-    <audio id="ばぁぁぁぁぁぁぁ" src="voice/ばぁぁぁぁぁぁぁ.mp3"></audio>
-    
-    <button onclick="playSound('ばぁーーん')">ばぁーーん</button>
-    <audio id="ばぁーーん" src="voice/ばぁーーん.mp3"></audio>
-    
-    <button onclick="playSound('バーーーン')">バーーーン</button>
-    <audio id="バーーーン" src="voice/バーーーン.mp3"></audio>
-    
-    <button onclick="playSound('バーーーン-2')">バーーーン-2</button>
-    <audio id="バーーーン-2" src="voice/バーーーン-2.mp3"></audio>
-    
-    <button onclick="playSound('パーティターイム')">パーティターイム</button>
-    <audio id="パーティターイム" src="voice/パーティターイム.mp3"></audio>
-    
-    <button onclick="playSound('パーフェクト')">パーフェクト</button>
-    <audio id="パーフェクト" src="voice/パーフェクト.mp3"></audio>
-    
-    <button onclick="playSound('バイバーイ')">バイバーイ</button>
-    <audio id="バイバーイ" src="voice/バイバーイ.mp3"></audio>
-    
-    <button onclick="playSound('ぱうーん')">ぱうーん</button>
-    <audio id="ぱうーん" src="voice/ぱうーん.mp3"></audio>
-    
-    <button onclick="playSound('ぱうーん-2')">ぱうーん-2</button>
-    <audio id="ぱうーん-2" src="voice/ぱうーん-2.mp3"></audio>
-    
-    <button onclick="playSound('ばうばうばうばう')">ばうばうばうばう</button>
-    <audio id="ばうばうばうばう" src="voice/ばうばうばうばう.mp3"></audio>
-    
-    <button onclick="playSound('ばうばうばうばうばう')">ばうばうばうばうばう</button>
-    <audio id="ばうばうばうばうばう" src="voice/ばうばうばうばうばう.mp3"></audio>
-    
-    <button onclick="playSound('バック')">バック</button>
-    <audio id="バック" src="voice/バック.mp3"></audio>
-    
-    <button onclick="playSound('ばばばばばばあばばばばばば')">ばばばばばばあばばばばばば</button>
-    <audio id="ばばばばばばあばばばばばば" src="voice/ばばばばばばあばばばばばば.mp3"></audio>
-    
-    <button onclick="playSound('ぱぱぱぱぱぱぱぼぼぼぼぼぼぼぱぱぱぱぱぱぱぼぼぼぼぼぼぼ')">ぱぱぱぱぱぱぱぼぼぼぼぼぼぼぱぱぱぱぱぱぱぼぼぼぼぼぼぼ</button>
-    <audio id="ぱぱぱぱぱぱぱぼぼぼぼぼぼぼぱぱぱぱぱぱぱぼぼぼぼぼぼぼ" src="voice/ぱぱぱぱぱぱぱぼぼぼぼぼぼぼぱぱぱぱぱぱぱぼぼぼぼぼぼぼ.mp3"></audio>
-    
-    <button onclick="playSound('バババババババン')">バババババババン</button>
-    <audio id="バババババババン" src="voice/バババババババン.mp3"></audio>
-    
-    <button onclick="playSound('バババンイャァーー')">バババンイャァーー</button>
-    <audio id="バババンイャァーー" src="voice/バババンイャァーー.mp3"></audio>
-    
-    <button onclick="playSound('パヒャヒャバヒュシュンシュンシュンシュン')">パヒャヒャバヒュシュンシュンシュンシュン</button>
-    <audio id="パヒャヒャバヒュシュンシュンシュンシュン" src="voice/パヒャヒャバヒュシュンシュンシュンシュン.mp3"></audio>
-    
-    <button onclick="playSound('はひゅーん、ボン')">はひゅーん、ボン</button>
-    <audio id="はひゅーん、ボン" src="voice/はひゅーん、ボン.mp3"></audio>
-    
-    <button onclick="playSound('パヒューン')">パヒューン</button>
-    <audio id="パヒューン" src="voice/パヒューン.mp3"></audio>
-    
-    <button onclick="playSound('パヒューン-2')">パヒューン-2</button>
-    <audio id="パヒューン-2" src="voice/パヒューン-2.mp3"></audio>
-    
-    <button onclick="playSound('ぱひゅーんヒュンヒュンヒュン')">ぱひゅーんヒュンヒュンヒュン</button>
-    <audio id="ぱひゅーんヒュンヒュンヒュン" src="voice/ぱひゅーんヒュンヒュンヒュン.mp3"></audio>
-    
-    <button onclick="playSound('ぱゆーん')">ぱゆーん</button>
-    <audio id="ぱゆーん" src="voice/ぱゆーん.mp3"></audio>
-    
-    <button onclick="playSound('ばよよーん')">ばよよーん</button>
-    <audio id="ばよよーん" src="voice/ばよよーん.mp3"></audio>
-    
-    <button onclick="playSound('パラノイアぼーん')">パラノイアぼーん</button>
-    <audio id="パラノイアぼーん" src="voice/パラノイアぼーん.mp3"></audio>
-    
-    <button onclick="playSound('バンバンバンバンバンバン')">バンバンバンバンバンバン</button>
-    <audio id="バンバンバンバンバンバン" src="voice/バンバンバンバンバンバン.mp3"></audio>
-    
-    <button onclick="playSound('ビーコン展開')">ビーコン展開</button>
-    <audio id="ビーコン展開" src="voice/ビーコン展開.mp3"></audio>
-    
-    <button onclick="playSound('ひと暴れしようか')">ひと暴れしようか</button>
-    <audio id="ひと暴れしようか" src="voice/ひと暴れしようか.mp3"></audio>
-    
-    <button onclick="playSound('ピピピピピピ')">ピピピピピピ</button>
-    <audio id="ピピピピピピ" src="voice/ピピピピピピ.mp3"></audio>
-    
-    <button onclick="playSound('ぴやん')">ぴやん</button>
-    <audio id="ぴやん" src="voice/ぴやん.mp3"></audio>
-    
-    <button onclick="playSound('ヒュヒュヒュヒュ')">ヒュヒュヒュヒュ</button>
-    <audio id="ヒュヒュヒュヒュ" src="voice/ヒュヒュヒュヒュ.mp3"></audio>
-    
-    <button onclick="playSound('ひょよーん')">ひょよーん</button>
-    <audio id="ひょよーん" src="voice/ひょよーん.mp3"></audio>
-    
-    <button onclick="playSound('ぴよよよん')">ぴよよよん</button>
-    <audio id="ぴよよよん" src="voice/ぴよよよん.mp3"></audio>
-    
-    <button onclick="playSound('ピンピンピンピンピンピンピン')">ピンピンピンピンピンピンピン</button>
-    <audio id="ピンピンピンピンピンピンピン" src="voice/ピンピンピンピンピンピンピン.mp3"></audio>
-    
-    <button onclick="playSound('ぶいーーん')">ぶいーーん</button>
-    <audio id="ぶいーーん" src="voice/ぶいーーん.mp3"></audio>
-    
-    <button onclick="playSound('ぶーーーん')">ぶーーーん</button>
-    <audio id="ぶーーーん" src="voice/ぶーーーん.mp3"></audio>
-    
-    <button onclick="playSound('ぶーん')">ぶーん</button>
-    <audio id="ぶーん" src="voice/ぶーん.mp3"></audio>
-    
-    <button onclick="playSound('フォローありがとう')">フォローありがとう</button>
-    <audio id="フォローありがとう" src="voice/フォローありがとう.mp3"></audio>
-    
-    <button onclick="playSound('ブシュー')">ブシュー</button>
-    <audio id="ブシュー" src="voice/ブシュー.mp3"></audio>
-    
-    <button onclick="playSound('ぶしゅーん')">ぶしゅーん</button>
-    <audio id="ぶしゅーん" src="voice/ぶしゅーん.mp3"></audio>
-    
-    <button onclick="playSound('プシュッ')">プシュッ</button>
-    <audio id="プシュッ" src="voice/プシュッ.mp3"></audio>
-    
-    <button onclick="playSound('プシュンガシャンガシャンプシューン')">プシュンガシャンガシャンプシューン</button>
-    <audio id="プシュンガシャンガシャンプシューン" src="voice/プシュンガシャンガシャンプシューン.mp3"></audio>
-    
-    <button onclick="playSound('ぷぷぷぷぷぷぷぷ')">ぷぷぷぷぷぷぷぷ</button>
-    <audio id="ぷぷぷぷぷぷぷぷ" src="voice/ぷぷぷぷぷぷぷぷ.mp3"></audio>
-    
-    <button onclick="playSound('ブユーン')">ブユーン</button>
-    <audio id="ブユーン" src="voice/ブユーン.mp3"></audio>
-    
-    <button onclick="playSound('プユーン')">プユーン</button>
-    <audio id="プユーン" src="voice/プユーン.mp3"></audio>
-    
-    <button onclick="playSound('ぶよーん')">ぶよーん</button>
-    <audio id="ぶよーん" src="voice/ぶよーん.mp3"></audio>
-    
-    <button onclick="playSound('ふらついている')">ふらついている</button>
-    <audio id="ふらついている" src="voice/ふらついている.mp3"></audio>
-    
-    <button onclick="playSound('ふらついてる')">ふらついてる</button>
-    <audio id="ふらついてる" src="voice/ふらついてる.mp3"></audio>
-    
-    <button onclick="playSound('ブラボー')">ブラボー</button>
-    <audio id="ブラボー" src="voice/ブラボー.mp3"></audio>
-    
-    <button onclick="playSound('ぼーーーーん')">ぼーーーーん</button>
-    <audio id="ぼーーーーん" src="voice/ぼーーーーん.mp3"></audio>
-    
-    <button onclick="playSound('ぼーーん')">ぼーーん</button>
-    <audio id="ぼーーん" src="voice/ぼーーん.mp3"></audio>
-    
-    <button onclick="playSound('ぼーん')">ぼーん</button>
-    <audio id="ぼーん" src="voice/ぼーん.mp3"></audio>
-    
-    <button onclick="playSound('ぼーん-2')">ぼーん-2</button>
-    <audio id="ぼーん-2" src="voice/ぼーん-2.mp3"></audio>
-    
-    <button onclick="playSound('ぼーん-3')">ぼーん-3</button>
-    <audio id="ぼーん-3" src="voice/ぼーん-3.mp3"></audio>
-    
-    <button onclick="playSound('ボットがやられた')">ボットがやられた</button>
-    <audio id="ボットがやられた" src="voice/ボットがやられた.mp3"></audio>
-    
-    <button onclick="playSound('ぼぼぼぼぼぼうーん散れぇ')">ぼぼぼぼぼぼうーん散れぇ</button>
-    <audio id="ぼぼぼぼぼぼうーん散れぇ" src="voice/ぼぼぼぼぼぼうーん散れぇ.mp3"></audio>
-    
-    <button onclick="playSound('ぽぽぽぽぽぽぼーんちゅちゅんどんどん')">ぽぽぽぽぽぽぼーんちゅちゅんどんどん</button>
-    <audio id="ぽぽぽぽぽぽぼーんちゅちゅんどんどん" src="voice/ぽぽぽぽぽぽぼーんちゅちゅんどんどん.mp3"></audio>
-    
-    <button onclick="playSound('ぼぼぼぼぼぼぼぼ')">ぼぼぼぼぼぼぼぼ</button>
-    <audio id="ぼぼぼぼぼぼぼぼ" src="voice/ぼぼぼぼぼぼぼぼ.mp3"></audio>
-    
-    <button onclick="playSound('ボボボボボボボン')">ボボボボボボボン</button>
-    <audio id="ボボボボボボボン" src="voice/ボボボボボボボン.mp3"></audio>
-    
-    <button onclick="playSound('ぽぽぽぽぽん')">ぽぽぽぽぽん</button>
-    <audio id="ぽぽぽぽぽん" src="voice/ぽぽぽぽぽん.mp3"></audio>
-    
-    <button onclick="playSound('ぼよーん')">ぼよーん</button>
-    <audio id="ぼよーん" src="voice/ぼよーん.mp3"></audio>
-    
-    <button onclick="playSound('ポヨーン')">ポヨーン</button>
-    <audio id="ポヨーン" src="voice/ポヨーン.mp3"></audio>
-    
-    <button onclick="playSound('ぼよーん-2')">ぼよーん-2</button>
-    <audio id="ぼよーん-2" src="voice/ぼよーん-2.mp3"></audio>
-    
-    <button onclick="playSound('ぼよーん-3')">ぼよーん-3</button>
-    <audio id="ぼよーん-3" src="voice/ぼよーん-3.mp3"></audio>
-    
-    <button onclick="playSound('ボヨンボヨーン')">ボヨンボヨーン</button>
-    <audio id="ボヨンボヨーン" src="voice/ボヨンボヨーン.mp3"></audio>
-    
-    <button onclick="playSound('ポンポンポンプシャーン')">ポンポンポンプシャーン</button>
-    <audio id="ポンポンポンプシャーン" src="voice/ポンポンポンプシャーン.mp3"></audio>
-    
-    <button onclick="playSound('ボンボンボンボン')">ボンボンボンボン</button>
-    <audio id="ボンボンボンボン" src="voice/ボンボンボンボン.mp3"></audio>
-    
-    <button onclick="playSound('ポンポンポンポンポンポンポン')">ポンポンポンポンポンポンポン</button>
-    <audio id="ポンポンポンポンポンポンポン" src="voice/ポンポンポンポンポンポンポン.mp3"></audio>
-    
-    <button onclick="playSound('まずいです')">まずいです</button>
-    <audio id="まずいです" src="voice/まずいです.mp3"></audio>
-    
-    <button onclick="playSound('マッチポイント')">マッチポイント</button>
-    <audio id="マッチポイント" src="voice/マッチポイント.mp3"></audio>
-    
-    <button onclick="playSound('ミッドミッド')">ミッドミッド</button>
-    <audio id="ミッドミッド" src="voice/ミッドミッド.mp3"></audio>
-    
-    <button onclick="playSound('むにゅ')">むにゅ</button>
-    <audio id="むにゅ" src="voice/むにゅ.mp3"></audio>
-    
-    <button onclick="playSound('むにゅむにゅむにゅむにゅむにゅ')">むにゅむにゅむにゅむにゅむにゅ</button>
-    <audio id="むにゅむにゅむにゅむにゅむにゅ" src="voice/むにゅむにゅむにゅむにゅむにゅ.mp3"></audio>
-    
-    <button onclick="playSound('ランプ1ランプ1')">ランプ1ランプ1</button>
-    <audio id="ランプ1ランプ1" src="voice/ランプ1ランプ1.mp3"></audio>
-    
-    <button onclick="playSound('リロード')">リロード</button>
-    <audio id="リロード" src="voice/リロード.mp3"></audio>
-    
-    <button onclick="playSound('リロード中')">リロード中</button>
-    <audio id="リロード中" src="voice/リロード中.mp3"></audio>
-    
-    <button onclick="playSound('リロード中-2')">リロード中-2</button>
-    <audio id="リロード中-2" src="voice/リロード中-2.mp3"></audio>
-    
-    <button onclick="playSound('リロード中-3')">リロード中-3</button>
-    <audio id="リロード中-3" src="voice/リロード中-3.mp3"></audio>
-    
-    <button onclick="playSound('リロード中-4')">リロード中-4</button>
-    <audio id="リロード中-4" src="voice/リロード中-4.mp3"></audio>
-    
-    <button onclick="playSound('わぁ!')">わぁ!</button>
-    <audio id="わぁ!" src="voice/わぁ!.mp3"></audio>
-    
-    <button onclick="playSound('ワンワンワンワンワンワンワンワン')">ワンワンワンワンワンワンワンワン</button>
-    <audio id="ワンワンワンワンワンワンワンワン" src="voice/ワンワンワンワンワンワンワンワン.mp3"></audio>
-    
-    <button onclick="playSound('んがぁ！')">んがぁ！</button>
-    <audio id="んがぁ！" src="voice/んがぁ！.mp3"></audio>
-    
-    <button onclick="playSound('んなぁ～')">んなぁ～</button>
-    <audio id="んなぁ～" src="voice/んなぁ～.mp3"></audio>
-    
-    <button onclick="playSound('俺のなんたらには逃れられない')">俺のなんたらには逃れられない</button>
-    <audio id="俺のなんたらには逃れられない" src="voice/俺のなんたらには逃れられない.mp3"></audio>
-    
-    <button onclick="playSound('俺はっ、ハンターだ')">俺はっ、ハンターだ</button>
-    <audio id="俺はっ、ハンターだ" src="voice/俺はっ、ハンターだ.mp3"></audio>
-    
-    <button onclick="playSound('皆殺しよ')">皆殺しよ</button>
-    <audio id="皆殺しよ" src="voice/皆殺しよ.mp3"></audio>
-    
-    <button onclick="playSound('皆殺しよ-2')">皆殺しよ-2</button>
-    <audio id="皆殺しよ-2" src="voice/皆殺しよ-2.mp3"></audio>
-    
-    <button onclick="playSound('獲物は狩り尽くした')">獲物は狩り尽くした</button>
-    <audio id="獲物は狩り尽くした" src="voice/獲物は狩り尽くした.mp3"></audio>
-    
-    <button onclick="playSound('気づいたことは全部報告して、次に活かすから')">気づいたことは全部報告して、次に活かすから</button>
-    <audio id="気づいたことは全部報告して、次に活かすから" src="voice/気づいたことは全部報告して、次に活かすから.mp3"></audio>
-    
-    <button onclick="playSound('気をつけて')">気をつけて</button>
-    <audio id="気をつけて" src="voice/気をつけて.mp3"></audio>
-    
-    <button onclick="playSound('気をつけろ')">気をつけろ</button>
-    <audio id="気をつけろ" src="voice/気をつけろ.mp3"></audio>
-    
-    <button onclick="playSound('気をつけろ…')">気をつけろ…</button>
-    <audio id="気をつけろ…" src="voice/気をつけろ….mp3"></audio>
-    
-    <button onclick="playSound('恐れるがいい')">恐れるがいい</button>
-    <audio id="恐れるがいい" src="voice/恐れるがいい.mp3"></audio>
-    
-    <button onclick="playSound('胸が痛むわ')">胸が痛むわ</button>
-    <audio id="胸が痛むわ" src="voice/胸が痛むわ.mp3"></audio>
-    
-    <button onclick="playSound('金はあるぞ')">金はあるぞ</button>
-    <audio id="金はあるぞ" src="voice/金はあるぞ.mp3"></audio>
-    
-    <button onclick="playSound('見とれるなよ、集中しろ')">見とれるなよ、集中しろ</button>
-    <audio id="見とれるなよ、集中しろ" src="voice/見とれるなよ、集中しろ.mp3"></audio>
-    
-    <button onclick="playSound('行こうか')">行こうか</button>
-    <audio id="行こうか" src="voice/行こうか.mp3"></audio>
-    
-    <button onclick="playSound('三人目')">三人目</button>
-    <audio id="三人目" src="voice/三人目.mp3"></audio>
-    
-    <button onclick="playSound('散れぇ')">散れぇ</button>
-    <audio id="散れぇ" src="voice/散れぇ.mp3"></audio>
-    
-    <button onclick="playSound('残念ね')">残念ね</button>
-    <audio id="残念ね" src="voice/残念ね.mp3"></audio>
-    
-    <button onclick="playSound('始末した')">始末した</button>
-    <audio id="始末した" src="voice/始末した.mp3"></audio>
-    
-    <button onclick="playSound('視界を塞ぐ')">視界を塞ぐ</button>
-    <audio id="視界を塞ぐ" src="voice/視界を塞ぐ.mp3"></audio>
-    
-    <button onclick="playSound('視界を塞ぐ-2')">視界を塞ぐ-2</button>
-    <audio id="視界を塞ぐ-2" src="voice/視界を塞ぐ-2.mp3"></audio>
-    
-    <button onclick="playSound('視界を塞ぐぅ')">視界を塞ぐぅ</button>
-    <audio id="視界を塞ぐぅ" src="voice/視界を塞ぐぅ.mp3"></audio>
-    
-    <button onclick="playSound('視界を奪う')">視界を奪う</button>
-    <audio id="視界を奪う" src="voice/視界を奪う.mp3"></audio>
-    
-    <button onclick="playSound('歯茎すぎでしょ')">歯茎すぎでしょ</button>
-    <audio id="歯茎すぎでしょ" src="voice/歯茎すぎでしょ.mp3"></audio>
-    
-    <button onclick="playSound('失せな')">失せな</button>
-    <audio id="失せな" src="voice/失せな.mp3"></audio>
-    
-    <button onclick="playSound('射撃の調子が悪くても、他にやれることはあるさ')">射撃の調子が悪くても、他にやれることはあるさ</button>
-    <audio id="射撃の調子が悪くても、他にやれることはあるさ" src="voice/射撃の調子が悪くても、他にやれることはあるさ.mp3"></audio>
-    
-    <button onclick="playSound('邪魔者には消えてもらう')">邪魔者には消えてもらう</button>
-    <audio id="邪魔者には消えてもらう" src="voice/邪魔者には消えてもらう.mp3"></audio>
-    
-    <button onclick="playSound('弱点を見つけて突くんだ')">弱点を見つけて突くんだ</button>
-    <audio id="弱点を見つけて突くんだ" src="voice/弱点を見つけて突くんだ.mp3"></audio>
-    
-    <button onclick="playSound('狩りの時間よ')">狩りの時間よ</button>
-    <audio id="狩りの時間よ" src="voice/狩りの時間よ.mp3"></audio>
-    
-    <button onclick="playSound('狩りの時間よ-2')">狩りの時間よ-2</button>
-    <audio id="狩りの時間よ-2" src="voice/狩りの時間よ-2.mp3"></audio>
-    
-    <button onclick="playSound('銃がある')">銃がある</button>
-    <audio id="銃がある" src="voice/銃がある.mp3"></audio>
-    
-    <button onclick="playSound('銃があるよ')">銃があるよ</button>
-    <audio id="銃があるよ" src="voice/銃があるよ.mp3"></audio>
-    
-    <button onclick="playSound('出ちゃった～')">出ちゃった～</button>
-    <audio id="出ちゃった～" src="voice/出ちゃった～.mp3"></audio>
-    
-    <button onclick="playSound('勝てない～～')">勝てない～～</button>
-    <audio id="勝てない～～" src="voice/勝てない～～.mp3"></audio>
-    
-    <button onclick="playSound('勝てない…')">勝てない…</button>
-    <audio id="勝てない…" src="voice/勝てない….mp3"></audio>
-    
-    <button onclick="playSound('消えてもらおうか！')">消えてもらおうか！</button>
-    <audio id="消えてもらおうか！" src="voice/消えてもらおうか！.mp3"></audio>
-    
-    <button onclick="playSound('消えろぉ…')">消えろぉ…</button>
-    <audio id="消えろぉ…" src="voice/消えろぉ….mp3"></audio>
-    
-    <button onclick="playSound('心臓の音が分かる？')">心臓の音が分かる？</button>
-    <audio id="心臓の音が分かる？" src="voice/心臓の音が分かる？.mp3"></audio>
-    
-    <button onclick="playSound('深呼吸だ')">深呼吸だ</button>
-    <audio id="深呼吸だ" src="voice/深呼吸だ.mp3"></audio>
-    
-    <button onclick="playSound('神のなんたら')">神のなんたら</button>
-    <audio id="神のなんたら" src="voice/神のなんたら.mp3"></audio>
-    
-    <button onclick="playSound('前半、最終ラウンド')">前半、最終ラウンド</button>
-    <audio id="前半、最終ラウンド" src="voice/前半、最終ラウンド.mp3"></audio>
-    
-    <button onclick="playSound('全員倒していいのよね')">全員倒していいのよね</button>
-    <audio id="全員倒していいのよね" src="voice/全員倒していいのよね.mp3"></audio>
-    
-    <button onclick="playSound('装備がいる')">装備がいる</button>
-    <audio id="装備がいる" src="voice/装備がいる.mp3"></audio>
-    
-    <button onclick="playSound('装備くれなーい？')">装備くれなーい？</button>
-    <audio id="装備くれなーい？" src="voice/装備くれなーい？.mp3"></audio>
-    
-    <button onclick="playSound('装備くれない？')">装備くれない？</button>
-    <audio id="装備くれない？" src="voice/装備くれない？.mp3"></audio>
-    
-    <button onclick="playSound('装備くれない？-2')">装備くれない？-2</button>
-    <audio id="装備くれない？-2" src="voice/装備くれない？-2.mp3"></audio>
-    
-    <button onclick="playSound('待ちなさい！')">待ちなさい！</button>
-    <audio id="待ちなさい！" src="voice/待ちなさい！.mp3"></audio>
-    
-    <button onclick="playSound('待ってください')">待ってください</button>
-    <audio id="待ってください" src="voice/待ってください.mp3"></audio>
-    
-    <button onclick="playSound('誰か買ってくれない？')">誰か買ってくれない？</button>
-    <audio id="誰か買ってくれない？" src="voice/誰か買ってくれない？.mp3"></audio>
-    
-    <button onclick="playSound('中央でキャリアダウン')">中央でキャリアダウン</button>
-    <audio id="中央でキャリアダウン" src="voice/中央でキャリアダウン.mp3"></audio>
-    
-    <button onclick="playSound('中央に敵がいる')">中央に敵がいる</button>
-    <audio id="中央に敵がいる" src="voice/中央に敵がいる.mp3"></audio>
-    
-    <button onclick="playSound('中央に敵よ')">中央に敵よ</button>
-    <audio id="中央に敵よ" src="voice/中央に敵よ.mp3"></audio>
-    
-    <button onclick="playSound('注意して')">注意して</button>
-    <audio id="注意して" src="voice/注意して.mp3"></audio>
-    
-    <button onclick="playSound('注意して-2')">注意して-2</button>
-    <audio id="注意して-2" src="voice/注意して-2.mp3"></audio>
-    
-    <button onclick="playSound('痛い痛い痛いやめてやめてブユーン')">痛い痛い痛いやめてやめてブユーン</button>
-    <audio id="痛い痛い痛いやめてやめてブユーン" src="voice/痛い痛い痛いやめてやめてブユーン.mp3"></audio>
-    
-    <button onclick="playSound('敵、残り1名')">敵、残り1名</button>
-    <audio id="敵、残り1名" src="voice/敵、残り1名.mp3"></audio>
-    
-    <button onclick="playSound('敵を見つけて')">敵を見つけて</button>
-    <audio id="敵を見つけて" src="voice/敵を見つけて.mp3"></audio>
-    
-    <button onclick="playSound('敵を排除')">敵を排除</button>
-    <audio id="敵を排除" src="voice/敵を排除.mp3"></audio>
-    
-    <button onclick="playSound('敵残り1名')">敵残り1名</button>
-    <audio id="敵残り1名" src="voice/敵残り1名.mp3"></audio>
-    
-    <button onclick="playSound('倒した')">倒した</button>
-    <audio id="倒した" src="voice/倒した.mp3"></audio>
-    
-    <button onclick="playSound('逃げられないど!')">逃げられないど!</button>
-    <audio id="逃げられないど!" src="voice/逃げられないど!.mp3"></audio>
-    
-    <button onclick="playSound('逃げられないど')">逃げられないど</button>
-    <audio id="逃げられないど" src="voice/逃げられないど.mp3"></audio>
-    
-    <button onclick="playSound('入ったボイボイン')">入ったボイボイン</button>
-    <audio id="入ったボイボイン" src="voice/入ったボイボイン.mp3"></audio>
-    
-    <button onclick="playSound('爆弾から逃げたとこを狙い撃ち')">爆弾から逃げたとこを狙い撃ち</button>
-    <audio id="爆弾から逃げたとこを狙い撃ち" src="voice/爆弾から逃げたとこを狙い撃ち.mp3"></audio>
-    
+
+
 <script>
+// 音声ファイルのリスト
+var audioFiles = [
+    '爆発注意',
+'平気なふりをしても無駄よ',
+'放火に耐えられるか',
+'木っ端微塵',
+'目を奪うわ',
+'目を奪うわ-2',
+'目を奪うわ-3',
+'踊らせてやるよ',
+'裏裏裏',
+'Aにスパイクよ',
+'Aに敵がいる',
+'Aに敵がいる-2',
+'Aに敵がいる-3',
+'Aに敵よ',
+'Aに敵確認',
+'Aに敵確認-2',
+'Bでキャリアーダウン',
+'Bでキャリアダウン',
+'Bに敵',
+'Bに敵確認',
+'Bに敵確認-2',
+'Bに敵確認-3',
+'Cに敵がいる',
+'あ、ミッドミッド',
+'あぁ～',
+'あぁ～～～ソーリー',
+'あぁ～っ',
+'あぁぁっ',
+'あぁっ！',
+'ああっ…',
+'あざます',
+'あっああっ',
+'あはははは～',
+'アラームボットダウン',
+'アラームボット展開',
+'アラームボット廃止',
+'ありがと',
+'ありがと-2',
+'ありがとありがと',
+'ありがとうございます',
+'ありがとうございます-2',
+'ありがとうございます-3',
+'アルティメット準備完了',
+'アルティメット準備完了-2',
+'アルティメット準備完了あぁ～',
+'いくぞ、準備は整った',
+'いけいけいけいけいけいけ',
+'いけっ',
+'いつだって僕はいつだって真剣なんだ',
+'ゔぃゔぃゔぃゔぃゔぃゔぃゔぃゔぃ',
+'ゔぃゔぃゔぃゔぃゔぃゔぃゔぃゔぃ-2',
+'ウルトケア',
+'うわっ、待って待って待って待って待って',
+'エントリーするぅ',
+'お願いします',
+'お金ならあるよ',
+'かぁっ!',
+'カウントダウン開始',
+'カウントダウン開始-2',
+'カチャ',
+'ガチャガチャガチャバーン',
+'カチャカチャカチャバシャーン',
+'カチャカチャカチャ恐れるがいい',
+'カチャン',
+'がっかりね',
+'ガレージ',
+'キャリアダウン',
+'きゅーんひゅんひゅんひゅんひゅーん',
+'くぁ～～～～',
+'くぅぁ～',
+'くそぉ',
+'ぐゆんぐゆんぐゆんぐゆん',
+'くらえ',
+'くらえ～',
+'くらえ-2',
+'ぐりゅんぐりゅんぐりゅんぐりゅんぐりゅんぐりゅん',
+'グルグルグルぼーん',
+'グレネード',
+'グレネード展開',
+'グレネード展開-2',
+'グレネード配置',
+'グレネード配置-2',
+'ぐわぁキャリアーダウン',
+'こいつは後から膝にくる',
+'ここだぁ',
+'ここにしよう',
+'ここよ',
+'ごめんすぎ',
+'これがチームの力だね',
+'これくれなーい？',
+'これで全部だね',
+'これ買ってくれなーい？',
+'こんこんこんこんこんこんこんこん',
+'さぁ!未知の世界へ',
+'サクサクサクサクサクサクサク',
+'サクサクサクサクシャンシャンシャンシャン',
+'さらばだ',
+'サンキュー',
+'サンキュー-2',
+'サンキュー-3',
+'サンキュー-4',
+'サンキュー-5',
+'サンキュー-6',
+'サンキュー-7',
+'サンキュー-8',
+'シェリフもらっていいですか？',
+'シャキン',
+'シュイーン',
+'しゅん',
+'スティムビーコン',
+'スティムビーコンじゃ',
+'スティムビーコンじゃ-2',
+'スパイクカウントダウン早め',
+'スパイクカウントダウン遅め',
+'スパイクを設置',
+'スパイク設置',
+'せーの',
+'セントリー設置',
+'ソーリー、ありがとうございました',
+'ソーリー',
+'ソーリメンすぎる',
+'たぁーっクラッチ',
+'タレットがやられた',
+'タレット展開',
+'タレット展開-2',
+'チャンピオンフィニッシャー',
+'チャンピオンフィニッシャー-2',
+'テレポート可能だ',
+'どうしよっかな～',
+'どうもね！',
+'どうもね',
+'どぅわぁ！',
+'どぅわぁ～',
+'トコトコトコトコトコ',
+'どこへ向かうの？',
+'ドッカーン',
+'ドドドドドドドン',
+'ドドドドボボボボボ',
+'とんとんとんととんととんとんとんとんとんとんとんととん',
+'とんとんとんとんとんとんとん',
+'トントントントントントントントン',
+'ドンボンボンボンボンボン',
+'ナイス',
+'ナイス-2',
+'ナイス-3',
+'ナイスだ～',
+'ナイストライ',
+'ナイスナイス',
+'ナイスナイス-2',
+'なにか必要か？',
+'なにか必要か？-2',
+'なんだろう、私達と似てる、でも、何かが違う',
+'なんやねん',
+'ばぁぁぁぁぁぁぁ',
+'ばぁーーん',
+'バーーーン',
+'バーーーン-2',
+'パーティターイム',
+'パーフェクト',
+'バイバーイ',
+'ぱうーん',
+'ぱうーん-2',
+'ばうばうばうばう',
+'ばうばうばうばうばう',
+'バック',
+'ばばばばばばあばばばばばば',
+'ぱぱぱぱぱぱぱぼぼぼぼぼぼぼぱぱぱぱぱぱぱぼぼぼぼぼぼぼ',
+'バババババババン',
+'バババンイャァーー',
+'パヒャヒャバヒュシュンシュンシュンシュン',
+'はひゅーん、ボン',
+'パヒューン',
+'パヒューン-2',
+'ぱひゅーんヒュンヒュンヒュン',
+'ぱゆーん',
+'ばよよーん',
+'パラノイアぼーん',
+'バンバンバンバンバンバン',
+'ビーコン展開',
+'ひと暴れしようか',
+'ピピピピピピ',
+'ぴやん',
+'ヒュヒュヒュヒュ',
+'ひょよーん',
+'ぴよよよん',
+'ピンピンピンピンピンピンピン',
+'ぶいーーん',
+'ぶーーーん',
+'ぶーん',
+'フォローありがとう',
+'ブシュー',
+'ぶしゅーん',
+'プシュッ',
+'プシュンガシャンガシャンプシューン',
+'ぷぷぷぷぷぷぷぷ',
+'ブユーン',
+'プユーン',
+'ぶよーん',
+'ふらついている',
+'ふらついてる',
+'ブラボー',
+'ぼーーーーん',
+'ぼーーん',
+'ぼーん',
+'ぼーん-2',
+'ぼーん-3',
+'ボットがやられた',
+'ぼぼぼぼぼぼうーん散れぇ',
+'ぽぽぽぽぽぽぼーんちゅちゅんどんどん',
+'ぼぼぼぼぼぼぼぼ',
+'ボボボボボボボン',
+'ぽぽぽぽぽん',
+'ぼよーん',
+'ポヨーン',
+'ぼよーん-2',
+'ぼよーん-3',
+'ボヨンボヨーン',
+'ポンポンポンプシャーン',
+'ボンボンボンボン',
+'ポンポンポンポンポンポンポン',
+'まずいです',
+'マッチポイント',
+'ミッドミッド',
+'むにゅ',
+'むにゅむにゅむにゅむにゅむにゅ',
+'ランプ1ランプ1',
+'リロード',
+'リロード中',
+'リロード中-2',
+'リロード中-3',
+'リロード中-4',
+'わぁ!',
+'ワンワンワンワンワンワンワンワン',
+'んがぁ！',
+'んなぁ～',
+'俺のなんたらには逃れられない',
+'俺はっ、ハンターだ',
+'皆殺しよ',
+'皆殺しよ-2',
+'獲物は狩り尽くした',
+'気づいたことは全部報告して、次に活かすから',
+'気をつけて',
+'気をつけろ',
+'気をつけろ…',
+'恐れるがいい',
+'胸が痛むわ',
+'金はあるぞ',
+'見とれるなよ、集中しろ',
+'行こうか',
+'三人目',
+'散れぇ',
+'残念ね',
+'始末した',
+'視界を塞ぐ',
+'視界を塞ぐ-2',
+'視界を塞ぐぅ',
+'視界を奪う',
+'歯茎すぎでしょ',
+'失せな',
+'射撃の調子が悪くても、他にやれることはあるさ',
+'邪魔者には消えてもらう',
+'弱点を見つけて突くんだ',
+'狩りの時間よ',
+'狩りの時間よ-2',
+'銃がある',
+'銃があるよ',
+'出ちゃった～',
+'勝てない～～',
+'勝てない…',
+'消えてもらおうか！',
+'消えろぉ…',
+'心臓の音が分かる？',
+'深呼吸だ',
+'神のなんたら',
+'前半、最終ラウンド',
+'全員倒していいのよね',
+'装備がいる',
+'装備くれなーい？',
+'装備くれない？',
+'装備くれない？-2',
+'待ちなさい！',
+'待ってください',
+'誰か買ってくれない？',
+'中央でキャリアダウン',
+'中央に敵がいる',
+'中央に敵よ',
+'注意して',
+'注意して-2',
+'痛い痛い痛いやめてやめてブユーン',
+'敵、残り1名',
+'敵を見つけて',
+'敵を排除',
+'敵残り1名',
+'倒した',
+'逃げられないど!',
+'逃げられないど',
+'入ったボイボイン',
+'爆弾から逃げたとこを狙い撃ち',
+];
+
+// 音声ボタンを生成する関数
+function createAudioButtons(audioFiles) {
+    var container = document.getElementById('buttonContainer');
+
+    for (var i = 0; i < audioFiles.length; i++) {
+        (function() {
+            var fileName = audioFiles[i];
+            var button = document.createElement('button');
+            button.textContent = fileName;
+            button.onclick = function() {
+                playSound(fileName);
+            };
+
+            var audio = document.createElement('audio');
+            audio.id = fileName;
+            audio.src = 'voice/' + fileName + '.mp3';
+
+            container.appendChild(button);
+            container.appendChild(audio);
+        })();
+    }
+}
+
+// 音声を再生する関数
 function playSound(soundId) {
     var sound = document.getElementById(soundId);
+    sound.volume = document.getElementById('volume').value;
     sound.play();
 }
+
+// 音声ボタンを生成
+createAudioButtons(audioFiles);
 </script>
 </body>
 </html>
