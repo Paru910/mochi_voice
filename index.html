@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <title>鏡矢おもちボイスボタン</title>
 </head>
 <body>
-	<h2 class="d-inline-block fw-bold">鏡矢おもちボイスボタン</h2>
-	
-	    <label for="volume">音量調整:</label>
+    <h2 class="d-inline-block fw-bold">鏡矢おもちボイスボタン</h2>
+    
+    <label for="volume">音量調整:</label>
     <input type="range" id="volume" name="volume" min="0" max="1" step="0.01" value="1">
 
     <div id="buttonContainer"></div>
-    
 
-
-<script>
-// 音声ファイルのリスト
-var audioFiles = [
-    '爆発注意',
+    <script>
+    // 音声ファイルのリスト
+    var audioFiles = [
+'爆発注意',
 '平気なふりをしても無駄よ',
 '放火に耐えられるか',
 '木っ端微塵',
@@ -315,40 +313,53 @@ var audioFiles = [
 '逃げられないど',
 '入ったボイボイン',
 '爆弾から逃げたとこを狙い撃ち',
-];
+        // 他の音声ファイル...
+    ];
 
-// 音声ボタンを生成する関数
-function createAudioButtons(audioFiles) {
-    var container = document.getElementById('buttonContainer');
+    // 音声ボタンを生成する関数
+    function createAudioButtons(audioFiles) {
+        var container = document.getElementById('buttonContainer');
 
-    for (var i = 0; i < audioFiles.length; i++) {
-        (function() {
-            var fileName = audioFiles[i];
-            var button = document.createElement('button');
-            button.textContent = fileName;
-            button.onclick = function() {
-                playSound(fileName);
-            };
+        for (var i = 0; i < audioFiles.length; i++) {
+            (function() {
+                var fileName = audioFiles[i];
+                var button = document.createElement('button');
+                button.textContent = fileName;
+                button.onclick = function() {
+                    playSound(fileName, button);
+                };
 
-            var audio = document.createElement('audio');
-            audio.id = fileName;
-            audio.src = 'voice/' + fileName + '.mp3';
+                var audio = document.createElement('audio');
+                audio.id = fileName;
+                audio.src = 'voice/' + fileName + '.mp3';
 
-            container.appendChild(button);
-            container.appendChild(audio);
-        })();
+                container.appendChild(button);
+                container.appendChild(audio);
+            })();
+        }
     }
-}
 
-// 音声を再生する関数
-function playSound(soundId) {
-    var sound = document.getElementById(soundId);
-    sound.volume = document.getElementById('volume').value;
-    sound.play();
-}
+    // 音声を再生する関数
+    function playSound(soundId, button) {
+        var sound = document.getElementById(soundId);
+        sound.volume = document.getElementById('volume').value;
+        
+        // 再生中のボタンをハイライト
+        var playingButton = document.querySelector('button.playing');
+        if (playingButton) {
+            playingButton.classList.remove('playing');
+        }
+        button.classList.add('playing');
 
-// 音声ボタンを生成
-createAudioButtons(audioFiles);
-</script>
+        sound.play();
+        
+        sound.onended = function() {
+            button.classList.remove('playing');
+        };
+    }
+
+    // 音声ボタンを生成
+    createAudioButtons(audioFiles);
+    </script>
 </body>
 </html>

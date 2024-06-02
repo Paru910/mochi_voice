@@ -1,6 +1,55 @@
-button {
-    background-color: #eba3a4;
-}
 body {
-    background-color: #5B4C4D;
+    font-family: Arial, sans-serif;
+    background-color: #FEEFEA; /* 背景色 */
+    text-align: center;
+    color: #373332; /* テキストカラー */
+}
+
+h2 {
+    color: #954546; /* 見出しのカラー */
+}
+
+#buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    border: 2px solid #373332; /* ボーダー色 */
+    border-radius: 5px;
+    background-color: #EAA4A4; /* ボタンの背景色 */
+    color: #373332; /* ボタンのテキストカラー */
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+    white-space: nowrap; /* 文字を改行させない */
+    width: auto;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #E4CEB9; /* ホバー時の背景色 */
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button.playing {
+    background-color: #09C9B4; /* 再生中の背景色 */
+}
+
+label {
+    font-size: 18px;
+    color: #5A4C4C; /* ラベルのテキストカラー */
+}
+
+input[type="range"] {
+    margin: 10px 0;
+    background-color: #E4CEB9; /* スライダーの背景色 */
 }
